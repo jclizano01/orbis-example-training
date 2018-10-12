@@ -1,5 +1,5 @@
-# Ejercicio 1
-Capacitación: Git, bash y docker
+# Ejercicio 12
+Capacitación: Git, bash y docker22
 Integrantes:
 - Jean Carlos Lizano Arroyo
 - Eduardo Akira Uechi Lopez

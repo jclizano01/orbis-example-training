@@ -9,3 +9,6 @@ docker run -d -p "1080:80" jclizano/orbis-training-docker:1.2.0
 docker run -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app  jclizano/orbis-training-docker:2.0.0 npm install
 
 --docker run -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app  jclizano/orbis-training-docker:2.0.0 npm start
+
+--pregunta 7
+ docker run -p "35729:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-traizano/orbis-training-docker:2.0.0 npm start
