@@ -1,7 +1,9 @@
-version: '2'
+version: '3'
 services:
-    nginx:
-        container_name: nginx_app
-        image: "jclizano/orbis-training-docker:1.2.0"
+    node:
+        container_name: node_3
+        image: "jclizano/orbis-training-docker:3.0.0"
+        working_dir: /app
         ports:
-            - "1080:80"
+            - "1045:3030"
+        command: "npm start"
