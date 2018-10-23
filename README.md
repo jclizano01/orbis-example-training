@@ -19,8 +19,7 @@ docker run -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-
  docker run -p "35729:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-traizano/orbis-training-docker:2.0.0 npm start
  docker run -p "1042:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app  jclizano/orbis-training-docker:2.0.0 npm start
  
-docker run -p "1042:3030" -p "3030:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-traini
-ng":/app  jclizano/orbis-training-docker:2.0.0 npm start
+docker run -p "1042:3030" -p "3030:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app  jclizano/orbis-training-docker:2.0.0 npm start
 
 
  --pregunta 9
@@ -29,3 +28,14 @@ ng":/app  jclizano/orbis-training-docker:2.0.0 npm start
  --pregunta 10
  docker run -p "1042:3030" -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-traizano/orbis-training-docker:2.0.0 npm run release
  
+ 
+ Parte8
+ 
+ --pregunta 1
+  docker run --net=host node:10.10.0-slim curl http://localhost:1045/#1
+
+  --pregunta 3
+  docker run -it -w /app -v  "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app  jclizano/orbis-training-docker:3.0.0 bash ./resources/example.sh
+  
+  --Pregunta 
+  docker run -it --entrypoint /bin/sh jclizano/orbis-training-docker:3.0.0 -c "echo Ejecutando contenedor..."

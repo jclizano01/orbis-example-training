@@ -1,0 +1,14 @@
+version: '3'
+services:
+    node:
+        container_name: test
+        image: "node:10.10.0-slim"
+        working_dir: /app
+        ports:
+            - "1048:3030"
+        command: "curl http://localhost:1047/#1"
+        
+networks:
+    default:
+        external:
+            name: host

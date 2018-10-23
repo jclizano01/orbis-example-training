@@ -1,9 +1,18 @@
 version: '3'
 services:
     node:
-        container_name: node_3
+        container_name: node_4
         image: "jclizano/orbis-training-docker:3.0.0"
         working_dir: /app
         ports:
-            - "1045:3030"
+            - "1047:3030"
         command: "npm start"
+    test:
+        container_name: test
+        image: "node:10.10.0-slim"
+        working_dir: /app
+        ports:
+            - "1048:3030"
+        network_mode: 
+            "host"
+        command: "curl http://localhost:1047/#1"
