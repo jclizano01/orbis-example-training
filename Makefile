@@ -3,7 +3,7 @@ include Makefile-task.mk
 ## GENERAL ##
 NAME_IMAGE		= jclizano/orbis-training-docker
 DOCKER_TAG		= 3.0.0
-DOCKER_IMAGE	=  ${NAME_IMAGE}:${DOCKER_TAG}
+DOCKER_IMAGE	= ${NAME_IMAGE}:${DOCKER_TAG}
 
 NAME			?= 'JEAN CARLOS LIZANO ARROYO'
 
@@ -35,7 +35,7 @@ release:
 	docker run \
 	-p "1042:3030" \
 	-w /app \
-	-v "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training:/app \
+	-v "C:\Jean Carlos Lizano Arroyo\Capacitacion\orbis-example-training":/app \
 	${DOCKER_IMAGE} npm run release
 
 # make greet NAME='thiago paolo'
