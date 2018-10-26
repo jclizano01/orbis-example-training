@@ -1,4 +1,5 @@
-include Makefile-task.mk
+include makefiles/task.mk
+include makefiles/deploy-ghpages.mk
 
 ## GENERAL ##
 NAME_IMAGE		= jclizano/orbis-training-docker
